@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+        content="Window tinting for your vehicle and building. Custom signs, commercial vehicle graphics, banners and decals from Autotrix Signs &amp; Graphics in Helena, Montana."
+        name="description" />
+    <meta content="#101820" name="theme-color" />
+    <title>Autotrix | Window Tinting, Signs &amp; Graphics in Helena, MT</title>
+    <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="assets/fonts.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link as="image" href="assets/vehicle.webp" rel="preload" />
+    <script defer="" src="script.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div aria-hidden="true" class="scroll-progress" id="scroll-progress"></div>
+    <!-- Reusable lightweight SVG icons. No icon library required. -->
+    <svg aria-hidden="true" class="icon-library" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="i-arrow" viewbox="0 0 24 24">
+            <path d="M4 12h15M13 5l7 7-7 7"></path>
+        </symbol>
+        <symbol id="i-up" viewbox="0 0 24 24">
+            <path d="M5 19 19 5M5 5h14v14"></path>
+        </symbol>
+        <symbol id="i-phone" viewbox="0 0 24 24">
+            <path d="m7 3 3 5-3 3a16 16 0 0 0 6 6l3-3 5 3c0 3-2 4-4 4C10 21 3 14 3 7c0-2 1-4 4-4Z"></path>
+        </symbol>
+        <symbol id="i-pin" viewbox="0 0 24 24">
+            <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+        </symbol>
+        <symbol id="i-shield" viewbox="0 0 24 24">
+            <path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6Z"></path>
+            <path d="m8 12 3 3 5-6"></path>
+        </symbol>
+        <symbol id="i-sun" viewbox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"></path>
+        </symbol>
+        <symbol id="i-car" viewbox="0 0 24 24">
+            <path d="m4 10 2-6h12l2 6M3 10h18v9H3zM5 19v2m14-2v2M6 14h2m8 0h2"></path>
+        </symbol>
+        <symbol id="i-building" viewbox="0 0 24 24">
+            <path d="M4 22V3h16v19M2 22h20M8 7h1m6 0h1M8 11h1m6 0h1M8 15h1m6 0h1M10 22v-4h4v4"></path>
+        </symbol>
+        <symbol id="i-eye" viewbox="0 0 24 24">
+            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </symbol>
+        <symbol id="i-leaf" viewbox="0 0 24 24">
+            <path d="M20 3C7 2 2 8 5 15s15 7 15-12ZM3 22l12-12"></path>
+        </symbol>
+        <symbol id="i-tools" viewbox="0 0 24 24">
+            <path d="m3 3 18 18M5 2l2 5-3-1-2-4m11 12L3 22l-2-2 8-9m6-3a5 5 0 0 0 6-6l-4 4-3-3 4-4"></path>
+        </symbol>
+        <symbol id="i-people" viewbox="0 0 24 24">
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M1 22v-4a8 8 0 0 1 16 0v4m1-19a4 4 0 0 1 0 8m2 4c3 1 3 4 3 7"></path>
+        </symbol>
+        <symbol id="i-diamond" viewbox="0 0 24 24">
+            <path d="m2 8 4-5h12l4 5-10 14Zm0 0h20M8 8l4 14 4-14-2-5h-4Z"></path>
+        </symbol>
+        <symbol id="i-check" viewbox="0 0 24 24">
+            <path d="m5 12 4 4L19 6"></path>
+        </symbol>
+        <symbol id="i-mail" viewbox="0 0 24 24">
+            <rect height="16" rx="2" width="20" x="2" y="4"></rect>
+            <path d="m3 6 9 7 9-7"></path>
+        </symbol>
+        <symbol id="i-chat" viewbox="0 0 24 24">
+            <path d="M21 4H3v14h4v4l5-4h9Z"></path>
+            <path d="M7 9h10M7 13h6"></path>
+        </symbol>
+        <symbol id="i-pen" viewbox="0 0 24 24">
+            <path d="m3 17-1 5 5-1L21 7a3 3 0 0 0-4-4ZM14 6l4 4"></path>
+        </symbol>
+        <symbol id="i-print" viewbox="0 0 24 24">
+            <path d="M6 8V2h12v6M6 18H2V8h20v10h-4M6 14h12v8H6Z"></path>
+        </symbol>
+    </svg>
+    <!-- 01. Announcement and sticky navigation -->
+    <div class="announcement">
+        <div class="container announcement-inner">
+            <p><span class="live-dot"></span><strong>NEW AT AUTOTRIX</strong><span class="announce-copy">Window tinting
+                    for vehicles &amp; buildings</span><a aria-label="Explore our new window tinting services"
+                    href="#tinting">Explore <span aria-hidden="true">→</span></a></p><span class="location">HELENA,
+                MONTANA</span>
+        </div>
+    </div>
+    <header class="site-header" id="header">
+        <div class="container navigation">
+            <!-- <a aria-label="Autotrix Signs and Graphics home" class="brand" href="#home"><span class="brand-name">AUTO<span>TRIX</span></span><span class="brand-tagline">SIGNS &amp; GRAPHICS</span></a> -->
+
+            <a aria-label="Autotrix Signs and Graphics home" class="brand" href="#home">
+                <img class="brand-logo" src="assets/autotrix-official-logo.webp" alt="Autotrix Signs & Graphics"
+                    width="1100" height="625" fetchpriority="high" />
+            </a>
+
+            <nav aria-label="Main navigation" class="main-nav" id="main-nav">
+                <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#tinting">Window Tinting</a><a
+                    class="nav-link" href="#services">Signs &amp; Graphics</a><a class="nav-link" href="#work">Our
+                    Work</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#contact">Contact</a>
+                <a class="button mobile-nav-quote" href="#contact">Get a free quote <svg>
+                        <use href="#i-arrow"></use>
+                    </svg></a>
+            </nav>
+            <div class="header-actions"><a aria-label="Call Autotrix at 406 443 7881" class="header-phone"
+                    href="tel:+14064437881"><svg>
+                        <use href="#i-phone"></use>
+                    </svg><span>(406) 443-7881</span></a><a class="button button-small header-quote" href="#contact">Get
+                    a quote <svg>
+                        <use href="#i-up"></use>
+                    </svg></a><button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation"
+                    class="menu-toggle"><span></span><span></span></button></div>
+        </div>
+    </header>
+    <main id="main">
+        <!-- 02. Accessible carousel with autoplay, swipe, dots and keyboard controls -->
+        <section aria-label="Featured Autotrix services" aria-roledescription="carousel" class="hero" id="home"
+            tabindex="0">
+            <div class="hero-slides">
+                <div aria-hidden="true" class="hero-edge-note">EST. IN HELENA <span>◆</span> MADE TO STAND OUT</div>
+                <article aria-label="1 of 4: Vehicle window tinting" aria-roledescription="slide"
+                    class="hero-slide is-active" data-slide="0" role="group">
+                    <img alt="Dark sports car with a sleek glass profile" class="hero-image" fetchpriority="high"
+                        height="1067" src="assets/vehicle.webp" width="1600" />
+                    <div class="container hero-content">
+                        <p class="eyebrow light"><span></span>VEHICLE WINDOW TINTING</p>
+                        <h1>A cooler drive.<br />A <em>clearer</em> view.</h1>
+                        <p class="hero-description">Less heat. Less glare. More you.<br />Give your everyday drive a
+                            whole new feel with professional window tinting.</p>
+                        <div class="button-row"><a class="button" data-service="Vehicle Window Tinting"
+                                href="#contact">Get a free quote <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a><a class="hero-text-link" href="#tinting">Discover tinting <span>→</span></a>
+                        </div>
+                        <div class="hero-local"><svg>
+                                <use href="#i-pin"></use>
+                            </svg>Local craftsmanship. Helena, Montana.</div>
+                    </div>
+                </article>
+                <article aria-hidden="true" aria-label="2 of 4: Building window tinting" aria-roledescription="slide"
+                    class="hero-slide" data-slide="1" inert="" role="group">
+                    <img alt="Sunlight reflecting from contemporary building windows" class="hero-image" height="1067"
+                        src="assets/building.webp" width="1600" />
+                    <div class="container hero-content">
+                        <p class="eyebrow light"><span></span>BUILDING WINDOW TINTING</p>
+                        <h2>Let the light in.<br />Leave the <em>glare.</em></h2>
+                        <p class="hero-description">Make your space more comfortable.<br />Window film solutions for
+                            homes, storefronts and workplaces.</p>
+                        <div class="button-row"><a class="button" data-service="Building Window Tinting"
+                                href="#contact">Get a free quote <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a><a class="hero-text-link" href="#tinting">Explore the benefits
+                                <span>→</span></a></div>
+                        <div class="hero-local"><svg>
+                                <use href="#i-pin"></use>
+                            </svg>Thoughtfully fitted for your space.</div>
+                    </div>
+                </article>
+                <article aria-hidden="true" aria-label="3 of 4: Storefront signage" aria-roledescription="slide"
+                    class="hero-slide" data-slide="2" inert="" role="group">
+                    <img alt="Christofferson and Ascension Adventures building signage from the Autotrix gallery"
+                        class="hero-image" height="800" src="assets/storefront.webp" width="1200" />
+                    <div class="container hero-content">
+                        <p class="eyebrow light"><span></span>CUSTOM BUSINESS SIGNAGE</p>
+                        <h2>Great businesses<br />deserve <em>great signs.</em></h2>
+                        <p class="hero-description">Make your first impression count.<br />Custom interior and exterior
+                            signs that put your business on the map.</p>
+                        <div class="button-row"><a class="button" data-service="Storefront Signage"
+                                href="#contact">Let's build your sign <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a><a class="hero-text-link" href="#services">Explore our services
+                                <span>→</span></a></div>
+                        <div class="hero-local"><svg>
+                                <use href="#i-pin"></use>
+                            </svg>Made to be noticed. Made for you.</div>
+                    </div>
+                </article>
+                <article aria-hidden="true" aria-label="4 of 4: Vehicle graphics" aria-roledescription="slide"
+                    class="hero-slide" data-slide="3" inert="" role="group">
+                    <img alt="Athletic Brewing commercial van graphics from the Autotrix gallery" class="hero-image"
+                        height="800" src="assets/athletic.webp" width="1200" />
+                    <div class="container hero-content">
+                        <p class="eyebrow light"><span></span>COMMERCIAL VEHICLE GRAPHICS</p>
+                        <h2>Your brand.<br />On the <em>move.</em></h2>
+                        <p class="hero-description">Turn every mile into an impression.<br />Custom lettering,
+                            commercial wraps and fleet graphics that work as hard as you do.</p>
+                        <div class="button-row"><a class="button" data-service="Vehicle Graphics" href="#contact">Brand
+                                your vehicle <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a><a class="hero-text-link" href="#work">See our work <span>→</span></a></div>
+                        <div class="hero-local"><svg>
+                                <use href="#i-pin"></use>
+                            </svg>From one work truck to your whole fleet.</div>
+                    </div>
+                </article>
+            </div>
+            <div aria-hidden="true" class="hero-corner-lines"><span></span><span></span></div>
+            <div class="container hero-bottom">
+                <div aria-label="Choose a hero slide" class="slide-tabs" role="group"><button
+                        aria-label="Show vehicle tinting slide" aria-pressed="true" class="slide-tab is-active"
+                        data-go-slide="0"><span>01</span>Vehicle tinting</button><button
+                        aria-label="Show building tinting slide" aria-pressed="false" class="slide-tab"
+                        data-go-slide="1"><span>02</span>Building tinting</button><button
+                        aria-label="Show storefront signage slide" aria-pressed="false" class="slide-tab"
+                        data-go-slide="2"><span>03</span>Storefront signs</button><button
+                        aria-label="Show vehicle graphics slide" aria-pressed="false" class="slide-tab"
+                        data-go-slide="3"><span>04</span>Vehicle graphics</button></div>
+                <div class="slider-controls"><button aria-label="Previous slide" class="circle-button"
+                        id="prev-slide">←</button><button aria-label="Pause slideshow" aria-pressed="false"
+                        class="circle-button pause-button" id="pause-slider">Ⅱ</button><button aria-label="Next slide"
+                        class="circle-button" id="next-slide">→</button></div>
+            </div>
+            <div aria-hidden="true" class="slide-progress"></div>
+            <p aria-live="polite" class="sr-only" id="slide-status"></p>
+        </section>
+        <!-- 03. Four simple trust highlights -->
+        <section aria-label="The Autotrix difference" class="trust-strip">
+            <div class="container trust-items">
+                <div><svg>
+                        <use href="#i-people"></use>
+                    </svg>
+                    <p><strong>Local &amp; family operated</strong><span>Rooted in Helena, Montana</span></p>
+                </div>
+                <div><svg>
+                        <use href="#i-diamond"></use>
+                    </svg>
+                    <p><strong>Quality-minded materials</strong><span>Chosen for your project</span></p>
+                </div>
+                <div><svg>
+                        <use href="#i-tools"></use>
+                    </svg>
+                    <p><strong>Professional installation</strong><span>Care in every detail</span></p>
+                </div>
+                <div><svg>
+                        <use href="#i-chat"></use>
+                    </svg>
+                    <p><strong>A personal approach</strong><span>From first idea to final finish</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- Decorative brand rhythm; the accessible label is static while the visual copy loops. -->
+        <div aria-label="Creative signs, window tinting and graphics, made in Helena" class="craft-ribbon">
+            <div aria-hidden="true" class="craft-ribbon-track">
+                <span>GOOD DESIGN. REAL IMPACT. <b>✳</b> MADE TO BE SEEN. <b>✳</b> BUILT WITH CARE. <b>✳</b></span>
+                <span>GOOD DESIGN. REAL IMPACT. <b>✳</b> MADE TO BE SEEN. <b>✳</b> BUILT WITH CARE. <b>✳</b></span>
+                <span>GOOD DESIGN. REAL IMPACT. <b>✳</b> MADE TO BE SEEN. <b>✳</b> BUILT WITH CARE. <b>✳</b></span>
+                <span>GOOD DESIGN. REAL IMPACT. <b>✳</b> MADE TO BE SEEN. <b>✳</b> BUILT WITH CARE. <b>✳</b></span>
+            </div>
+        </div>
+        <!-- 04. Featured tinting services -->
+        <section class="section tinting-section" id="tinting">
+            <div class="container">
+                <div class="section-heading reveal section-heading-compact">
+                    <p class="eyebrow">WINDOW TINTING</p>
+                    <h2>Comfort looks <span class="text-red">good.</span></h2>
+                    <p>Professional film for the places you spend your time.</p>
+                </div>
+                <div class="tinting-cards">
+                    <article class="tint-card reveal tint-vehicle"><img
+                            alt="Premium black vehicle showing tinted side windows" height="1067" loading="lazy"
+                            src="assets/vehicle.webp" width="1600" />
+                        <div class="tint-content"><span class="mini-tag">01 / AUTO</span>
+                            <h3>Vehicle<br />Window Tinting</h3>
+                            <p>Reduce heat, cut glare, and add privacy with professional automotive tinting.</p><a
+                                class="button" data-service="Vehicle Window Tinting" href="#contact">Get vehicle tinting
+                                <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a>
+                        </div><button aria-label="More about vehicle window tinting" class="tint-more"
+                            data-detail="vehicle"><svg>
+                                <use href="#i-arrow"></use>
+                            </svg></button>
+                    </article>
+                    <article class="tint-card reveal tint-building"><img
+                            alt="Glass office building showing architectural windows" height="1067" loading="lazy"
+                            src="assets/building.webp" width="1600" />
+                        <div class="tint-content"><span class="mini-tag">02 / ARCHITECTURAL</span>
+                            <h3>Building<br />Window Tinting</h3>
+                            <p>Improve comfort, privacy and energy efficiency for your business or property.</p><a
+                                class="button" data-service="Building Window Tinting" href="#contact">Get building
+                                tinting <svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></a>
+                        </div><button aria-label="More about building window tinting" class="tint-more"
+                            data-detail="building"><svg>
+                                <use href="#i-arrow"></use>
+                            </svg></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 05. Window film benefits -->
+        <section class="benefits section" id="benefits">
+            <div class="container">
+                <div class="benefits-intro reveal">
+                    <div>
+                        <p class="eyebrow light">MORE THAN A GOOD LOOK</p>
+                        <h2>Feel the difference.<br />Every single day.</h2>
+                    </div>
+                    <p>Thoughtfully selected window film can make a big difference to the spaces you spend time in.</p>
+                </div>
+                <div class="benefit-list">
+                    <article class="reveal"><svg>
+                            <use href="#i-sun"></use>
+                        </svg>
+                        <h3>Less heat</h3>
+                        <p>Help reduce solar heat for a more comfortable interior.</p>
+                    </article>
+                    <article class="reveal"><svg>
+                            <use href="#i-shield"></use>
+                        </svg>
+                        <h3>UV protection</h3>
+                        <p>Choose film designed to reduce ultraviolet exposure.</p>
+                    </article>
+                    <article class="reveal"><svg>
+                            <use href="#i-eye"></use>
+                        </svg>
+                        <h3>Added privacy</h3>
+                        <p>Find the right balance of privacy and visibility.</p>
+                    </article>
+                    <article class="reveal"><svg>
+                            <use href="#i-leaf"></use>
+                        </svg>
+                        <h3>Better comfort</h3>
+                        <p>Manage glare and help ease cooling demands in your space.</p>
+                    </article>
+                </div>
+                <p class="fine-print">Performance varies by film, glass, lighting and installation. We'll help you
+                    choose an appropriate option.</p>
+            </div>
+        </section>
+        <!-- 06. Full signage and graphics service range -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading reveal section-heading-compact">
+                    <p class="eyebrow">SIGNS &amp; GRAPHICS</p>
+                    <h2>Complete <span class="text-red">Signs &amp; Graphics</span> Solutions.</h2>
+                    <p>Custom design, production, and installation to help your business stand out.</p>
+                </div>
+                <div class="services-grid">
+                    <button class="service-card reveal" data-detail="storefront">
+                        <div class="service-photo"><img
+                                alt="Autotrix storefront signage installed on a business building" height="480"
+                                loading="lazy" src="assets/storefront.webp" width="640" /></div>
+                        <div class="service-caption">
+                            <h3>Storefront Signage</h3>
+                            <p>High-impact signs that bring your business to life.</p><span aria-hidden="true"
+                                class="service-open"><svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></span>
+                        </div>
+                    </button>
+                    <button class="service-card reveal" data-detail="graphics">
+                        <div class="service-photo"><img
+                                alt="Custom commercial vehicle lettering and graphics on a green and white van"
+                                height="480" loading="lazy" src="assets/van.webp" width="640" /></div>
+                        <div class="service-caption">
+                            <h3>Vehicle Graphics</h3>
+                            <p>Custom wraps and graphics that get you noticed.</p><span aria-hidden="true"
+                                class="service-open"><svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></span>
+                        </div>
+                    </button>
+                    <button class="service-card reveal" data-detail="banners">
+                        <div class="service-photo"><img alt="Custom sports-field banners and printed advertising"
+                                height="480" loading="lazy" src="assets/banner.webp" width="640" /></div>
+                        <div class="service-caption">
+                            <h3>Custom Banners</h3>
+                            <p>Durable, vibrant banners for events, promotions &amp; more.</p><span aria-hidden="true"
+                                class="service-open"><svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></span>
+                        </div>
+                    </button>
+                    <button class="service-card reveal" data-detail="realtor">
+                        <div class="service-photo"><img alt="Freestanding real estate for-sale property sign"
+                                height="480" loading="lazy" src="assets/realestate.webp" width="640" /></div>
+                        <div class="service-caption">
+                            <h3>Yard &amp; Realtor Signs</h3>
+                            <p>Portable, professional signs for any occasion.</p><span aria-hidden="true"
+                                class="service-open"><svg>
+                                    <use href="#i-arrow"></use>
+                                </svg></span>
+                        </div>
+                    </button>
+                </div>
+                <div class="more-services reveal"><span>ALSO AVAILABLE</span>
+                    <div><button data-detail="decals">Custom decals ↗</button><button
+                            data-detail="directional">Directional signs ↗</button><button
+                            data-detail="interior">Interior &amp; exterior ↗</button><button
+                            data-detail="promotional">Promotional signs ↗</button><button data-detail="signshop">Custom
+                            sign shop ↗</button></div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="wall-title" class="feature-split feature-wall" id="wall-graphics">
+            <div class="feature-image feature-image-wall"><img
+                    alt="Architectural glass facade used as an illustration for window graphics" height="1067"
+                    loading="lazy" src="assets/building.webp" width="1600" /><span aria-hidden="true"
+                    class="glass-art"><i></i><i></i><i></i></span><span class="feature-image-label">CUSTOM WALL &amp;
+                    WINDOW GRAPHICS</span></div>
+            <div class="feature-panel">
+                <div class="feature-panel-inner reveal">
+                    <p class="eyebrow light">WALL &amp; WINDOW GRAPHICS</p>
+                    <h2 id="wall-title">Wall &amp; Window <em>Graphics.</em></h2>
+                    <p>Transform your space with custom graphics for walls, glass, and interior environments.</p>
+                    <ul class="feature-checks">
+                        <li><svg>
+                                <use href="#i-check"></use>
+                            </svg>Brand your office or retail space</li>
+                        <li><svg>
+                                <use href="#i-check"></use>
+                            </svg>Add privacy with frosted designs</li>
+                        <li><svg>
+                                <use href="#i-check"></use>
+                            </svg>Create a professional, high-impact look</li>
+                    </ul>
+                    <div class="feature-actions"><a class="button" data-service="Wall &amp; Window Graphics"
+                            href="#contact">Get wall &amp; window graphics <svg>
+                                <use href="#i-arrow"></use>
+                            </svg></a><button aria-label="See wall and window graphics details" class="feature-detail"
+                            data-detail="wall">Learn more ↗</button></div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="roadside-title" class="roadside-section" id="roadside">
+            <img alt="Installed outdoor roadside and real-estate advertising sign" class="roadside-bg" height="480"
+                loading="lazy" src="assets/realestate.webp" width="640" />
+            <div aria-hidden="true" class="roadside-grid"></div>
+            <div class="container roadside-inner">
+                <div class="roadside-copy reveal">
+                    <p class="eyebrow light">ROADSIDE SIGNS</p>
+                    <h2 id="roadside-title">Roadside Signs<br />That <em>Get Noticed.</em></h2>
+                    <p>High-visibility, durable roadside signs that drive awareness and bring in more business.</p>
+                    <div class="roadside-buttons"><a class="button" data-service="Roadside Signs" href="#contact">Get a
+                            Free Quote <svg>
+                                <use href="#i-arrow"></use>
+                            </svg></a><button class="roadside-more" data-detail="roadside">Explore options ↗</button>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="roadside-badge reveal"><span>MADE TO</span><strong>STAND
+                        OUT</strong><small>AUTOTRIX SIGNS &amp; GRAPHICS</small></div>
+            </div>
+        </section>
+        <!-- 07. Authentic gallery: filtering and accessible image lightbox -->
+        <section class="section work-section" id="work">
+            <div class="container">
+                <div class="section-heading heading-row reveal">
+                    <div>
+                        <p class="eyebrow">OUR WORK</p>
+                        <h2>Recent <span class="text-red">Projects.</span></h2>
+                    </div>
+                    <p>Explore real signs and vehicle graphics from the Autotrix gallery.</p>
+                </div>
+                <div class="gallery-toolbar reveal">
+                    <div aria-label="Filter projects" class="gallery-filters" role="group"><button aria-pressed="true"
+                            class="active" data-filter="all">All projects <span>06</span></button><button
+                            aria-pressed="false" data-filter="vehicles">Vehicle graphics</button><button
+                            aria-pressed="false" data-filter="signs">Signs &amp; banners</button></div><span
+                        class="gallery-hint">A LITTLE INSPIRATION FOR YOUR NEXT IDEA <span>↓</span></span>
+                </div>
+                <div class="gallery-grid" id="gallery">
+                    <button class="project project-wide reveal" data-caption="Great Clips — Commercial vehicle graphics"
+                        data-category="vehicles" data-image="assets/van.webp"><img
+                            alt="Great Clips van with green and white branding" height="600" loading="lazy"
+                            src="assets/van.webp" width="800" /><span class="project-caption"><span><small>VEHICLE
+                                    GRAPHICS</small><strong>Great Clips</strong></span><span
+                                class="project-plus">+</span></span></button>
+                    <button class="project reveal" data-caption="The Uphill Grill — Food trailer graphics"
+                        data-category="vehicles" data-image="assets/foodtruck.webp"><img
+                            alt="The Uphill Grill branded food trailer" height="600" loading="lazy"
+                            src="assets/foodtruck.webp" width="800" /><span
+                            class="project-caption"><span><small>COMMERCIAL BRANDING</small><strong>The Uphill
+                                    Grill</strong></span><span class="project-plus">+</span></span></button>
+                    <button class="project reveal" data-caption="Century 21 — Real estate signage" data-category="signs"
+                        data-image="assets/realestate.webp"><img alt="Century 21 property sign with clear branding"
+                            height="600" loading="lazy" src="assets/realestate.webp" width="800" /><span
+                            class="project-caption"><span><small>PROPERTY SIGNAGE</small><strong>Century
+                                    21</strong></span><span class="project-plus">+</span></span></button>
+                    <button class="project project-wide reveal"
+                        data-caption="Athletic Brewing — Commercial van graphics" data-category="vehicles"
+                        data-image="assets/athletic.webp"><img alt="Athletic Brewing blue commercial van" height="600"
+                            loading="lazy" src="assets/athletic.webp" width="800" /><span
+                            class="project-caption"><span><small>VEHICLE GRAPHICS</small><strong>Athletic
+                                    Brewing</strong></span><span class="project-plus">+</span></span></button>
+                    <button class="project reveal"
+                        data-caption="Christofferson &amp; Ascension Adventures — Exterior signage"
+                        data-category="signs" data-image="assets/storefront.webp"><img
+                            alt="Local business signs mounted on a building facade" height="600" loading="lazy"
+                            src="assets/storefront.webp" width="800" /><span
+                            class="project-caption"><span><small>EXTERIOR SIGNAGE</small><strong>A welcome that stands
+                                    out</strong></span><span class="project-plus">+</span></span></button>
+                    <button class="project reveal" data-caption="Sports field — Advertising signage"
+                        data-category="signs" data-image="assets/banner.webp"><img
+                            alt="Custom advertising surrounding a sports field" height="600" loading="lazy"
+                            src="assets/banner.webp" width="800" /><span
+                            class="project-caption"><span><small>ADVERTISING &amp; COMMUNITY</small><strong>Made for the
+                                    big game</strong></span><span class="project-plus">+</span></span></button>
+                </div>
+                <p aria-live="polite" class="sr-only" id="gallery-status">Showing all 6 projects.</p>
+            </div>
+        </section>
+        <!-- 08. Separate about section -->
+        <section class="section about-section" id="about">
+            <div class="container about-layout">
+                <div class="about-image reveal"><img alt="Workshop building pictured in the Autotrix project gallery"
+                        height="800" loading="lazy" src="assets/workshop.webp" width="900" /><span
+                        class="about-stamp"><svg>
+                            <use href="#i-pin"></use>
+                        </svg>HELENA, MONTANA<br /><strong>Local roots.<br />Lasting impressions.</strong></span></div>
+                <div class="about-copy reveal">
+                    <p class="eyebrow">YOUR LOCAL CREATIVE CREW</p>
+                    <h2>Big on ideas.<br />Bigger on the details.</h2>
+                    <p>We're Autotrix Signs &amp; Graphics, a family-operated business serving Helena and the
+                        surrounding communities.</p>
+                    <p>From a fresh storefront sign to a branded work vehicle, we help turn your ideas into something
+                        you can see, touch and take pride in. Now, we're bringing that same care to window tinting for
+                        vehicles and buildings.</p>
+                    <div class="about-points"><span><svg>
+                                <use href="#i-check"></use>
+                            </svg>Custom work, built around you</span><span><svg>
+                                <use href="#i-check"></use>
+                            </svg>Design, production &amp; installation</span><span><svg>
+                                <use href="#i-check"></use>
+                            </svg>A real local team to talk to</span></div><a class="text-link" href="#contact">Let's
+                        get to know your project <svg>
+                            <use href="#i-arrow"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+        <!-- 09. Process -->
+        <section class="section process-section" id="process">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <p class="eyebrow">FROM THE FIRST HELLO</p>
+                    <h2>Your idea. Brought to life.</h2>
+                    <p>A straightforward process, with you in the loop.</p>
+                </div>
+                <div class="process-steps">
+                    <article class="reveal"><span class="step-number">01</span><svg>
+                            <use href="#i-chat"></use>
+                        </svg>
+                        <h3>Let's talk</h3>
+                        <p>Tell us what you need, where it's going and what you have in mind.</p>
+                    </article>
+                    <article class="reveal"><span class="step-number">02</span><svg>
+                            <use href="#i-pen"></use>
+                        </svg>
+                        <h3>Make a plan</h3>
+                        <p>We work through the design, materials or film options for your project.</p>
+                    </article>
+                    <article class="reveal"><span class="step-number">03</span><svg>
+                            <use href="#i-print"></use>
+                        </svg>
+                        <h3>Bring it to life</h3>
+                        <p>Your approved project moves into careful production and preparation.</p>
+                    </article>
+                    <article class="reveal"><span class="step-number">04</span><svg>
+                            <use href="#i-tools"></use>
+                        </svg>
+                        <h3>The finishing touch</h3>
+                        <p>We arrange installation or pickup and help you care for the finished result.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 10. Genuine review destinations, no invented ratings or testimonials -->
+        <section class="reviews-section section" id="reviews">
+            <div class="container">
+                <div class="reviews-heading reveal">
+                    <div>
+                        <p class="eyebrow">REVIEWS</p>
+                        <h2>What Our <span class="text-red">Clients Say.</span></h2>
+                        <p>Real customer experiences matter. Explore the feedback on our public review page.</p>
+                    </div><a class="button button-dark-outline"
+                        href="https://www.yelp.com/biz/autotrix-signs-and-graphics-helena" rel="noopener noreferrer"
+                        target="_blank">Read reviews on Yelp <svg>
+                            <use href="#i-up"></use>
+                        </svg></a>
+                </div>
+                <div class="review-points">
+                    <article class="reveal"><span class="review-icon">“</span>
+                        <h3>Reviews you can verify.</h3>
+                        <p>Visit our Yelp profile to read customer feedback directly from the source.</p><a
+                            href="https://www.yelp.com/biz/autotrix-signs-and-graphics-helena" rel="noopener noreferrer"
+                            target="_blank">See customer feedback ↗</a>
+                    </article>
+                    <article class="reveal"><span class="review-icon">✦</span>
+                        <h3>See our craftsmanship.</h3>
+                        <p>Take a look at real custom signs, graphics and branding projects.</p><a href="#work">Explore
+                            recent projects ↗</a>
+                    </article>
+                    <article class="reveal"><span class="review-icon">↗</span>
+                        <h3>Have a project in mind?</h3>
+                        <p>Tell us about your ideas and we'll help find the right next step.</p><a
+                            href="#contact">Request a free quote ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- 11. FAQ accordion -->
+        <section class="section faq-section" id="faq">
+            <div class="container faq-layout">
+                <div class="section-heading reveal">
+                    <p class="eyebrow light">FAQ</p>
+                    <h2>Frequently Asked<br /><span class="text-red">Questions.</span></h2>
+                    <p>Useful answers before your project begins.</p>
+                </div>
+                <div class="faq-list reveal">
+                    <details open="">
+                        <summary>Do you tint both vehicles and buildings?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>Yes. Autotrix offers window tinting for vehicles and building windows. Tell us about your
+                                vehicle or space so we can discuss suitable film options.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>How long does window tinting take?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>Timing depends on the vehicle or building, the amount of glass, existing film and the
+                                installation requirements. Contact us with your project details for a schedule and care
+                                instructions.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Which window film should I choose?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>The right film depends on your glass, your priorities and the installation. We can
+                                discuss comfort, glare, appearance and privacy before you decide. Film performance and
+                                visibility vary by product and lighting.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Can you help with the design for my sign?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>Yes. We can work with your existing artwork or help develop a design for custom signs and
+                                graphics. Share your logo, approximate dimensions and where the sign will be installed
+                                to get started.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Do you offer full color-change vehicle wraps?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>We no longer offer full color-change wraps. We continue to offer commercial vehicle
+                                wraps, business lettering and branded vehicle graphics.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>What do you need to prepare a quote?<span aria-hidden="true"></span></summary>
+                        <div>
+                            <p>Start with the service you need, approximate dimensions or vehicle details, your location
+                                and preferred timing. Photos and existing artwork can be shared when you email us.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- 12. Strong standalone CTA -->
+
+        <!-- 13. Contact and validated quote form -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">LET'S GET STARTED</p>
+                    <h2>Get a <span class="text-red">Quote.</span></h2>
+                    <p>Tell us about your project and we’ll get back to you with the next steps.</p>
+                    <div class="contact-links"><a href="tel:+14064437881"><span class="contact-icon"><svg>
+                                    <use href="#i-phone"></use>
+                                </svg></span><span><small>GIVE US A CALL</small><strong>(406)
+                                    443-7881</strong></span></a><a href="mailto:autotrixgraphics@gmail.com"><span
+                                class="contact-icon"><svg>
+                                    <use href="#i-mail"></use>
+                                </svg></span><span><small>DROP US A
+                                    LINE</small><strong>autotrixgraphics@gmail.com</strong></span></a>
+                        <div><span class="contact-icon"><svg>
+                                    <use href="#i-pin"></use>
+                                </svg></span><span><small>PROUDLY LOCAL</small><strong>Helena, Montana</strong></span>
+                        </div>
+                    </div>
+                    <p class="contact-note">Not sure which service you need? That's okay.<br />We're happy to help you
+                        find a starting point.</p>
+                </div>
+                <form class="quote-form reveal" id="quote-form">
+                    <h3>Tell us about your project</h3>
+                    <p class="form-intro">We would love to hear what you have in mind.</p>
+                    <div class="form-row">
+                        <div class="form-field"><label for="name">Your name <span>*</span></label><input
+                                autocomplete="name" id="name" maxlength="100" name="name" placeholder="Full name"
+                                required="" /></div>
+                        <div class="form-field"><label for="phone">Phone number</label><input autocomplete="tel"
+                                id="phone" maxlength="30" name="phone" placeholder="(406) 000-0000" type="tel" /></div>
+                    </div>
+                    <div class="form-field"><label for="email">Email address <span>*</span></label><input
+                            autocomplete="email" id="email" maxlength="150" name="email" placeholder="you@example.com"
+                            required="" type="email" /></div>
+                    <div class="form-field"><label for="service">What can we help you with?
+                            <span>*</span></label><select id="service" name="service" required="">
+                            <option value="">Choose a service</option>
+                            <option>Vehicle Window Tinting</option>
+                            <option>Building Window Tinting</option>
+                            <option>Storefront Signage</option>
+                            <option>Vehicle Graphics</option>
+                            <option>Custom Banners</option>
+                            <option>Custom Decals</option>
+                            <option>Realtor Signs</option>
+                            <option>Wall &amp; Window Graphics</option>
+                            <option>Interior &amp; Exterior Signs</option>
+                            <option>Directional Signs</option>
+                            <option>Roadside Signs</option>
+                            <option>Promotional Signs</option>
+                            <option>Custom Sign Shop</option>
+                            <option>Something Else</option>
+                        </select></div>
+                    <div class="form-field"><label for="message">A little about your project
+                            <span>*</span></label><textarea id="message" maxlength="3000" minlength="10" name="message"
+                            placeholder="Your ideas, vehicle or window details, approximate size, timing…" required=""
+                            rows="4"></textarea></div>
+                    <div aria-hidden="true" class="honeypot"><label for="company-website">Leave this field
+                            empty</label><input autocomplete="off" id="company-website" name="company_website"
+                            tabindex="-1" /></div><button class="button form-submit" type="submit">Contact Our Team
+                        <svg>
+                            <use href="#i-arrow"></use>
+                        </svg></button>
+                    <p class="form-note">We'll prepare an email for you to review and send. Nothing is sent
+                        automatically.</p>
+                    <div class="form-result" hidden="" id="form-result" role="status"></div><noscript>
+                        <p>Please email your project details to <a
+                                href="mailto:autotrixgraphics@gmail.com">autotrixgraphics@gmail.com</a>.</p>
+                    </noscript>
+                </form>
+            </div>
+        </section>
+        <section class="quote-banner">
+            <div class="container quote-banner-inner reveal">
+                <div>
+                    <p class="eyebrow light">WINDOW TINTING • SIGNS • GRAPHICS</p>
+                    <h2>Ready to <em>Get Started?</em></h2>
+                </div><a class="button button-white" href="#contact">Get a Free Quote <svg>
+                        <use href="#i-arrow"></use>
+                    </svg></a><span aria-hidden="true" class="banner-decor">→</span>
+            </div>
+        </section>
+    </main>
+    <!-- 14. Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <!-- <img alt="Original Auto Trix Signs and Graphics logo" height="100"
+                        loading="lazy" src="assets/logo.png" width="155" /> -->
+
+<img
+    src="assets/autotrix-official-logo.webp"
+    alt="Autotrix Signs and Graphics official logo"
+    width="1100"
+    height="625"
+    loading="lazy"
+/>
+                    <p>Window tinting, custom signs and graphics.<br />Local craft. A lasting impression.</p>
+                    <div class="social-links"><a href="https://www.facebook.com/autotrixgraphics"
+                            rel="noopener noreferrer" target="_blank">Facebook →</a><a
+                            href="https://www.instagram.com/autotrix_graphics/" rel="noopener noreferrer"
+                            target="_blank">Instagram →</a></div>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3><a href="#tinting">Window tinting</a><a href="#services">Signs &amp; graphics</a><a
+                        href="#wall-graphics">Wall &amp; window graphics</a><a href="#roadside">Roadside signs</a><a
+                        href="#work">Our work</a><a href="#about">About Autotrix</a><a href="#faq">FAQs</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Let's create</h3><a data-service="Vehicle Window Tinting" href="#contact">For your vehicle</a><a
+                        data-service="Building Window Tinting" href="#contact">For your building</a><a
+                        data-service="Storefront Signage" href="#contact">For your business</a><a href="#contact">Get a
+                        free quote</a>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3>Say hello</h3><a href="tel:+14064437881">(406) 443-7881</a><a
+                        href="mailto:autotrixgraphics@gmail.com">autotrixgraphics@gmail.com</a>
+                    <p>Helena, Montana, USA</p><span class="footer-local"><span class="live-dot"></span>YOUR LOCAL SIGNS
+                        &amp; GRAPHICS TEAM</span>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© <span id="year">2026</span> Autotrix Signs &amp; Graphics. All rights
+                    reserved.</span><a href="https://www.autotrixgraphics.com/privacy" rel="noopener noreferrer"
+                    target="_blank">Privacy policy →</a><a href="#home">Back to top ↑</a></div>
+        </div>
+    </footer>
+    <button aria-label="Back to top" class="back-to-top">↑</button>
+    <!-- Shared service detail dialog -->
+    <dialog aria-labelledby="detail-title" class="service-dialog" id="service-dialog"><button
+            aria-label="Close service details" class="dialog-close">×</button>
+        <p class="eyebrow">MADE FOR YOU</p>
+        <h2 id="detail-title"></h2>
+        <p id="detail-description"></p>
+        <ul id="detail-list"></ul>
+        <p class="detail-note" id="detail-note"></p><a class="button" href="#contact" id="detail-quote">Request a free
+            quote <svg>
+                <use href="#i-arrow"></use>
+            </svg></a>
+    </dialog>
+    <!-- Gallery image dialog -->
+    <dialog aria-labelledby="lightbox-caption" class="lightbox" id="lightbox"><button aria-label="Close project image"
+            class="dialog-close">×</button><img alt="" id="lightbox-image" src="assets/van.webp" />
+        <p id="lightbox-caption"></p>
+    </dialog>
+</body>
+
+</html>
